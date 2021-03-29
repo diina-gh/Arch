@@ -14,3 +14,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 ### Getting started with laravel-admin
+First, install laravel 5.5, and make sure that the database connection settings are correct.
+```shell
+composer require encore/laravel-admin
+```
