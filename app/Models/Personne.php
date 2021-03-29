@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Personne extends Model
 {
-    use HasFactory;
+    //use HasFactory;
 
     protected $fillable = array(
         'parent_id',
@@ -19,7 +19,7 @@ class Personne extends Model
         'order' => 'required',
         'nom' => 'required'
     );
-    public function parent()
+    public function ancestor()
     {
         return $this->belongsTo(Personne::class, 'parent_id');
     }

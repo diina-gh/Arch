@@ -15,6 +15,10 @@ class CreatePersonnesTable extends Migration
     {
         Schema::create('personnes', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('parent_id')->unsigned()->nullable(true);
+            $table->foreign('parent_id')->references('id')->on('personnes');
+            $table->bigInteger('order')->unsigned();
+            $table->string('nom');
             $table->timestamps();
         });
     }
