@@ -3,7 +3,7 @@ Arch is an admin dashboard build with laravel-admin, an administrative interface
 
 ### About Laravel
 
-[Laravel](https://laravel.com/) is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as routing, dependency injection, database ORM, ...
+[Laravel](https://laravel.com/) is a web application framework with expressive, elegant syntax. Laravel takes the pain out of development by easing common tasks used in many web projects, such as routing, dependency injection, database ORM, ...
 
 ### Getting started with laravel-admin
 
