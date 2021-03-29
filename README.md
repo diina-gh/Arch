@@ -14,7 +14,20 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 ### Getting started with laravel-admin
+
 First, install laravel 5.5, and make sure that the database connection settings are correct.
 ```shell
 composer require encore/laravel-admin
+```
+
+Then run these commands to publish assets and config：
+```shell
+php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
+```
+
+After run command you can find config file in config/admin.php, in this file you can change the install directory,db connection or table names.
+
+At last run following command to finish install
+```shell
+php artisan admin:install
 ```
