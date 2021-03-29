@@ -1,6 +1,5 @@
-###Arch
-
-
+##Arch
+Arch is an admin dashboard build with laravel-admin, an administrative interface builder for laravel which can help us build CRUDs in a limited amount of time.
 
 ## About Laravel
 
