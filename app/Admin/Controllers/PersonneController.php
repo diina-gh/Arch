@@ -27,6 +27,9 @@ class PersonneController extends AdminController
         $grid = new Grid(new Personne());
 
         $grid->column('id', __('Id'));
+        $grid->column('ancestor.nom', __('Ancestor'));
+        $grid->column('order', __('Order'));
+        $grid->column('nom', __('Nom'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
