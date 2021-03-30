@@ -28,6 +28,7 @@ class PersonneController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('ancestor.nom', __('Ancestor'));
+
         $grid->column('order', __('Order'));
         $grid->column('nom', __('Nom'));
         $grid->column('created_at', __('Created at'));
@@ -47,6 +48,9 @@ class PersonneController extends AdminController
         $show = new Show(Personne::findOrFail($id));
 
         $show->field('id', __('Id'));
+        $show->field('parent_id', __('Parent id'));
+        $show->field('order', __('Order'));
+        $show->field('nom', __('Nom'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -62,7 +66,7 @@ class PersonneController extends AdminController
     {
         $form = new Form(new Personne());
 
-        $form->select('parent_id', __('Parent id'))->options(Personne::all()->pluck('nom', 'id'));
+        $form->number('parent_id', __('Parent id'));
         $form->number('order', __('Order'));
         $form->text('nom', __('Nom'));
 
